@@ -1,12 +1,12 @@
 #include "Intern.hpp"
 
 Intern::Intern(){
-    std::cout << "Intern constructor" << std::endl;
+
 
 }
 
 Intern::~Intern(){
-    std::cout << "Intern destructor" << std::endl;
+
 }
 
 Intern::Intern(Intern const& copy){

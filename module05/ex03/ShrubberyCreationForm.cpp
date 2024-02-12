@@ -4,6 +4,10 @@ ShrubberyCreationForm::ShrubberyCreationForm(){
     this->_target = "BenCreation";
 }
 
+ShrubberyCreationForm::ShrubberyCreationForm(std::string target){
+    _target = target;
+}
+
 ShrubberyCreationForm::~ShrubberyCreationForm(){
 
 }

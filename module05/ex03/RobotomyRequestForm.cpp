@@ -6,6 +6,10 @@ RobotomyRequestForm::RobotomyRequestForm()
     _target = "Bob";
 }
 
+RobotomyRequestForm::RobotomyRequestForm(std::string target){
+    _target = target;
+}
+
 RobotomyRequestForm::~RobotomyRequestForm()
 {
 

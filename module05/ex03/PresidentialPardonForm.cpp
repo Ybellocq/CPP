@@ -6,6 +6,11 @@ PresidentialPardonForm::PresidentialPardonForm()
     _target = "RubenPardon";
 }
 
+PresidentialPardonForm::PresidentialPardonForm(std::string target)
+{
+    _target = target;
+}
+
 PresidentialPardonForm::~PresidentialPardonForm()
 {
 

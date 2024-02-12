@@ -38,7 +38,7 @@ Bureaucrat& Bureaucrat::operator=(const Bureaucrat& b) {
 }
 
 Bureaucrat::Bureaucrat(){
-    std::cout << "constructor called" << std::endl;
+    
 }
 
 Bureaucrat::Bureaucrat(const Bureaucrat& b)

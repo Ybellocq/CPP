@@ -41,7 +41,7 @@ AForm& AForm::operator=(const AForm& f) {
   return *this;
 }
 AForm::AForm() : _name("default"), _grade(150), _exec(150), _sign(false){
-    std::cout << "constructor called" << std::endl;
+    
 }
 
 AForm::AForm(const std::string& name, const int& grade, const int& exec) : _name(name), _grade(grade), _exec(exec), _sign(false) {
@@ -65,5 +65,5 @@ std::ostream& operator<<(std::ostream& o, const AForm& f) {
 }
 
 AForm::~AForm(void) {
-    std::cout << "destructor called" << std::endl;
+    
 }
