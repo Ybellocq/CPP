@@ -41,8 +41,7 @@ Bureaucrat::Bureaucrat(){
     std::cout << "constructor called" << std::endl;
 }
 
-Bureaucrat::Bureaucrat(const Bureaucrat& b)
-  : _name(b.getName()), _grade(b.getGrade()) {
+Bureaucrat::Bureaucrat(const Bureaucrat& b) : _name(b.getName()), _grade(b.getGrade()) {
   if (_grade < GRADE_MAX)
     throw GradeTooHighException();
   if (_grade > GRADE_MIN)
