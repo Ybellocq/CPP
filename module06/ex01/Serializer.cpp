@@ -25,6 +25,7 @@ uintptr_t Serializer::serializer(Data* ptr)
 {
     return reinterpret_cast<uintptr_t>(ptr);
 }
+// store(record) all data of all type
 
 Data* Serializer::deserialize(uintptr_t raw)
 {

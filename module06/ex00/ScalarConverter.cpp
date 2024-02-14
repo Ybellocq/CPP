@@ -150,6 +150,7 @@ int ScalarConverter::checkStr(std::string const& value)
     }
     else if (value == "nan" || value == "nanf")
     {
+        // nan = (Not-A-Number)
         std::cout << "Char : impossible" << std::endl;
         std::cout << "Int : impossible" << std::endl;
         std::cout << "Float : nanf" << std::endl;
