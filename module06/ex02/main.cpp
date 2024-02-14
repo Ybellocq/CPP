@@ -32,14 +32,17 @@ void identify(Base& p)
 {
     if (A* derivedA = dynamic_cast<A*>(&p))
     {
+        (void)derivedA;
         std::cout << "A" << std::endl;
     }
     else if (B* derivedB = dynamic_cast<B*>(&p))
     {
+        (void)derivedB;
         std::cout << "B" << std::endl;
     }
     else if (C* derivedC = dynamic_cast<C*>(&p))
     {
+        (void)derivedC;
         std::cout << "C" << std::endl;
     }
     else
