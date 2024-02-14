@@ -13,7 +13,7 @@ class OccurenceException : public std::exception{
 };
 
 template <typename T>
-int eastfind(const T & container, int nb){
+void easyfind(const T & container, int nb){
     if (std::find(container.begin(), container.end(), nb) != container.end())
         std::cout << nb << " is in the container." << std::endl;
     else   
