@@ -17,9 +17,15 @@ class Span{
         ~Span();
         Span(const Span &copy);
         Span& operator=(const Span &copy);
-        void addNumber();
+        void addNumber(int num);
         int shortestSpan();
         int longestSpan();
+        void addMultipleNumbers(std::vector<int>::iterator it_start, std::vector<int>::iterator it_end);
+    class spanIsFull : public std::exception{
+        virtual const char *what() const throw(){
+            return "Span is full";
+        }
+    };
     class notNumberFind : public std::exception{
         virtual const char *what() const throw(){
             return "not number found or only one number find";
