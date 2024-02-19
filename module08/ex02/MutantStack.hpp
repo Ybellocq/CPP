@@ -4,6 +4,8 @@
 #include <list>
 #include <iostream>
 #include <string>
+#include <iterator>
+#include <stack>
 
 template <typename T>
 
@@ -22,7 +24,14 @@ class MutantStack : public std::stack<T>{
             (void)copy;
             return *this;
         }
-        
-    
+        typedef typename std::stack<T>::container_type::iterator iterator;
+        //      type_conteneur	Le deuxième paramètre de modèle (Récipient)	Type du conteneur sous-jacent
 
+        typename MutantStack<T>::iterator begin(){
+            return (this->c.begin());
+        }
+
+        typename MutantStack<T>::iterator end(){
+            return (this->c.end());
+        } 
 };
