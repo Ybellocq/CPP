@@ -29,7 +29,7 @@ class Array{
             tab = new T(size);
             for(size_t i = 0; i < _size; i++)
                 tab[i] = copy.tab[i];
-            return *this; //return class     
+            return *this;    
         }
         class Index :  public std::exception {
             const char* what() const throw () {
